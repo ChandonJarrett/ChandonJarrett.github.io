@@ -63,8 +63,8 @@ nav {
 .parallax {
     background: url("https://images.wallpaperscraft.com/image/single/code_symbols_programming_183643_1920x1080.jpg")
         repeat fixed 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 @keyframes navIn {
