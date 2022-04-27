@@ -1,1 +1,88 @@
+body {
+    background: #FAEBDC;
+    font-family: 'IBM Plex Mono', monospace;
+}
 
+h1 {
+    font-family: 'MonteCarlo', cursive;
+}
+
+nav {
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: white;
+    background-color: #2D2D2D;
+    padding: 0px 25px;
+    border-bottom: 5px solid #9664AF;
+    animation: navIn 1s ease-in-out;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    display:flex;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -15px;
+}
+
+.menu a {
+    color: #FFF;
+    margin: 0 15px;
+    padding: 7px 15px;
+    transition: 0.25s;
+    border-radius: 99px;
+}
+
+.menu a.is-active, .menu a:hover {
+    background-color: #9664AF;
+}
+
+.main {
+    font-size: 125px;
+    margin: -5% 10%;
+    animation: transpIn 1s ease-in-out;
+}
+
+.margin {
+    margin: -10% 0;
+}
+
+.parallax {
+    background: url("https://images.wallpaperscraft.com/image/single/code_symbols_programming_183643_1920x1080.jpg")
+        repeat fixed 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@keyframes navIn {
+    from {
+        opacity: 0;
+        transform: translateY(-125px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes transpIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
