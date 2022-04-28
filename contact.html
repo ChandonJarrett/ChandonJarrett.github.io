@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>ChandonJarrett | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- FONTS -->
+        <!-- font-family: 'MonteCarlo', cursive; -->
+        <!-- font-family: 'IBM Plex Mono', monospace; -->
+        <!-- font-family: 'Quicksand', sans-serif; -->
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=MonteCarlo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); 
+    </style> 
+</head>
+
+<nav>
+    <div class = "container">
+        <h1>Chandon Jarrett</h1>
+        
+        <div class = "menu">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="" class="is-active">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class = "contact">
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <h2>Reach Me Here!</h2>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone # (NOT REQUIRED)">
+        <textarea id="message" rows="4" placeholder="Your Message" requried></textarea>
+        <button tpye="submit">Submit</button>
+    </form>
+
+<script src="main.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+</div>
